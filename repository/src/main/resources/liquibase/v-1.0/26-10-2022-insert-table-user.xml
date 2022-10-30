@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="2" author="Roman_Yaskevich" context="test">
+        <sql>
+            insert into user (user_name, user_surname, user_middlename, user_email, user_role)
+            values ('Роман', 'Яскевич', 'Андреевич', 'roman@mail.ru', 'ADMIN'),
+                   ('Игорь', 'Сорокин', 'Николавич', 'igor@gmail.ru', 'SALE_USER'),
+                   ('Анна', 'Дмитреева', 'Васильевна', 'anna@mail.ru', 'CUSTOMER_USER')
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
